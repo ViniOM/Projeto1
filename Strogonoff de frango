@@ -1,7 +1,8 @@
 const prompt = require('prompt-sync')();
 
+console.log("------------RESPONDA COM sim ou nao
 console.log("--------------");
-console.log("Sua esposa te manda ir ao mercado comprar ingredientes de um strogonoff, porem não te deu uma lista com os itens que falta, ela acha que voce sabe quais sao");
+console.log("Sua esposa te manda ir ao mercado comprar ingredientes de um strogonoff, porem não te deu uma lista com os itens que falta, ela acha que voce sabe quais sao.");
 console.log("--------------");
 console.log("Logo quando você chega em casa, ela te pergunta sobre os itens que voce tinha que comprar");
 console.log("--------------");
@@ -43,15 +44,13 @@ if ( creme == "sim") {
   }else if(creme == "nao") {
     nao = nao+1;
   }
-else {
-    console.log("sim OU nao");
-}
+
 console.log("sim - ", sim, " nao - ", nao);
 
 if (sim == 0) {
     console.log("Voce nao comprou nada que precisava, voce tomou um tabefe da sua esposa.");
 }else if(sim == 1 || sim == 2) {
-    console.log("Voce não comprou todos os ingredientes, CORRA! pois sua esposa esta furiosa.");
+    console.log("Voce comprou menos da metade dos ingredientes, CORRA! pois sua esposa esta furiosa.");
 }else if (sim == 3){
     console.log("Voce comprou metade dos ingredientes, sua esposa te chamou de burro. Voce esta triste :(");
 }else if (sim == 4) {
